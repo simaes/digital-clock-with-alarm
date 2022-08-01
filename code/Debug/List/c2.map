@@ -1,0 +1,49 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ref                                                                               0x0260       4
+keys                                                                              0x0264      24
+key_value                                                                         0x027C       4
+inputcounter                                                                      0x0280       4
+st                                                                                0x0284      16
+status                                                                            0x0294      16
+if_started                                                                        0x02A4       2
+if_alarm                                                                          0x02A6       2
+_base_y                                                                           0x02A8       4
+_lcd_x                                                                            0x02AC       1
+_lcd_y                                                                            0x02AD       1
+_lcd_maxx                                                                         0x02AE       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+sec                                                                               R4,R5        2
+min                                                                               R6,R7        2
+hour                                                                              R8,R9        2
+min_alm                                                                           R10,R11      2
+hour_alm                                                                          R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer1_compa_isr                                                                  0x00096     62
+main                                                                              0x000D4     28
+keypad                                                                            0x000F0    179
+display                                                                           0x001A3     62
+alarm                                                                             0x001E1     43
+_lcd_write_nibble_G100                                                            0x0020C     20
+_lcd_write_data                                                                   0x00220     12
+lcd_gotoxy                                                                        0x0022C     17
+lcd_clear                                                                         0x0023D     14
+lcd_putchar                                                                       0x0024B     32
+lcd_puts                                                                          0x0026B     17
+lcd_init                                                                          0x0027C     46
+put_buff_G101                                                                     0x002AA     64
+_print_G101                                                                       0x002EA    308
+sprintf                                                                           0x0041E     52
+strlen                                                                            0x00452     12
+strlenf                                                                           0x0045E     13
